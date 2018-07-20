@@ -1,15 +1,15 @@
 /* Global Layout Set-up */
-* {
+* { 
   box-sizing: border-box;
 }
-
+  
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #fafafa;
+  background: darkcyan;
 }
 /* Link Styles */
 
@@ -25,7 +25,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: #222;
+  background: black;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -57,33 +57,37 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/geometry.png') repeat top center ;
-  background-size: 280px 280px;
+  background: url('images/portland.jpg') no-repeat top center ;
+  background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-}
+ }
 header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
-  width: 150px;
-  height: 150px;
+ 
+  background: url(images/me.png) no-repeat;
+  margin-top: 100px;
+  width: 115px;
+  height: 140px;
   border-radius: 50%;
-  border: 3px solid white;
+  
   transition: all .5s;
 }
+
 header .profile-image:hover {
-  transform: scale(1.1) rotate(4deg);
+  background: url(images/portland.jpg) no-repeat;
+   transform: scale(1.1) rotate(360deg);
 }
 .tag {
-  background-color: #efefef;
-  color: #4a4a4a;
+  background-color:yellowgreen;
+  color: red;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-}
+} 
 .location {
   background-color: #222;
   color: yellow;
@@ -91,18 +95,12 @@ header .profile-image:hover {
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
-  max-width: 100%;
+  max-width: 500px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
-}
-.card h2 {
-  color: #4a4a4a;
-}
-.card p {
-  color: #7f7f7f;
 }
 .card:hover {
   border-color: #ff99ff;
@@ -157,8 +155,8 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
+a.facebook {
+  background-image: url(images/facebook.png);
 }
 a.linkedin {
   background-image: url(images/linkedin.svg);
@@ -175,10 +173,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-
+  
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex;
+      display: flex; 
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -203,10 +201,6 @@ a.social:hover {
     line-height: 1.6em;
   }
 
-  .card {
-    max-width: 500px;
-  }
-
   footer {
     font-size: 1.3em;
     max-width: 1200px;
@@ -214,3 +208,4 @@ a.social:hover {
   }
 
 }
+
