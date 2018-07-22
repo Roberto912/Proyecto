@@ -158,6 +158,10 @@ a.social {
 a.facebook {
   background-image: url(images/facebook.png);
 }
+a.steam {
+  background-image: url(images/steam.png);
+
+}
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
